@@ -88,6 +88,14 @@ Le script affichera un aperçu des données horaires de pression et de vent.
 | **precipitation**       | `mm`                           | **Risque**: Quantité de pluie par heure (pour l'alerte inondation).                                           |
 | **cape**                | `J/kg`                         | **Potentiel Convectif**: Indique l'énergie disponible pour les orages et l'instabilité (favorise le développement du cyclone). |
 
+### Paramètres
+
+| Paramètre      | Type        | Description                                                        |
+|----------------|-------------|--------------------------------------------------------------------|
+| latitude       | str         | Latitude du lieu.                                                  |
+| longitude      | str         | Longitude du lieu.                                                 |
+| hourly_vars    | List[str]   | Liste des variables météo à récupérer (ex : `['pressure_msl', 'wind_speed_10m']`). |
+
 ### 5.3. Gestion des Erreurs
 
 La gestion des erreurs est centralisée dans `utils/error_handler.py`:
